@@ -1,9 +1,6 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-
 
 @layer base, animation;
 
@@ -19,38 +16,22 @@
   }
 }
 
-
-body{
-  margin: 0;
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
-main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-
-
-}
-
-
-
-
-
-#closed-shadows, #opened-top, #shadow-paper,#paper-morph-to {
-  visibility: hidden;
-}
-
 
 html {
   background-color: beige;
   padding: 0;
   margin: 0;
   overflow: hidden;
-
 }
 
 body {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -60,7 +41,6 @@ body {
   justify-content: center;
   align-content: center;
 }
-
 
 body svg {
   height: 95vh;
