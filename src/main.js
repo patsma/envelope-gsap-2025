@@ -66,10 +66,7 @@ document.addEventListener("DOMContentLoaded", function () {
     GSDevTools.create({timeline: mainTimeline});
 
 
-    gsap.set('#paper', {
-      autoAlpha: 0,
-      transformOrigin: 'center bottom'
-    })
+
     // Chain all animation steps to the main timeline
     mainTimeline
       .from('#text > *', {autoAlpha: 0, stagger: 0.1})
@@ -90,15 +87,20 @@ document.addEventListener("DOMContentLoaded", function () {
         scaleY: 0,
         ease:'linear'
       }, '-=1')
-      .add('show-paper', '-=1')
+      .from('#paper', {
+        duration: 2,
+        scaleY: 0,
+        transformOrigin: 'center bottom'
+    },'-=2.5')
+    .to('#paper-mask', {y: '+=500', duration: 2.5})
       .to(['#pattern-top', '#closed', '#shadows-inner', '#pattern-bottom', '#accents', '#body', '#bottom-shadow'], {
-        duration: 2.54,
-      }, 'show-paper')
+        y: '+=500',
+        duration: 2.6,
+
+    },'<')
 
 
-      .fromTo('#envelope-half', {x: '-=1500', duration: 5}, {x: -1050}, 'show-asasdfinal')
-
-
+    .from('#paper-mask-full', {autoAlpha: 0, duration: 0.01},'-=1')
       .from('#shadows-inner', {autoAlpha: 0, y: '+=2'}, 0.1);
   }
 
