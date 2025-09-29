@@ -123,3 +123,6 @@ dist
 .iddea
 /.vscode/
 /.vscode/
+.DS_Store
+.cursorrules
+CLAUDE.md
