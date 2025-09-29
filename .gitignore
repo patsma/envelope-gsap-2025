@@ -126,3 +126,4 @@ dist
 .DS_Store
 .cursorrules
 CLAUDE.md
+netlify.toml
