@@ -8,7 +8,8 @@ An elegant SVG envelope opening animation built with GSAP, Vite, and vanilla Jav
 
 ## ✨ Features
 
-- 🎨 **Complex SVG Morphing** - Smooth envelope opening sequence using GSAP MorphSVGPlugin
+- 🎨 **Complex SVG Animation** - Smooth envelope opening sequence with GSAP timeline
+- 📐 **Adobe Illustrator Source** - Editable `.ai` file included in `src/envelope.ai`
 - ⚡ **Vite-Powered** - Fast development with hot module replacement
 - 🎯 **Minimal & Optimized** - Only essential GSAP plugins for optimal bundle size
 - 🎪 **Debug Tools** - Built-in GSDevTools for animation fine-tuning
@@ -56,9 +57,10 @@ envelope-gsap-2025/
 ├── src/
 │   ├── main.js          # Main application logic & GSAP animations
 │   ├── index.scss       # Global styles with Tailwind layers
-│   └── logo.ai          # Adobe Illustrator source
+│   ├── envelope.ai      # Adobe Illustrator source file (editable)
+│   └── logo.ai          # Logo source file
 ├── public/
-│   └── envelope.svg     # Main SVG graphic with animation IDs
+│   └── envelope.svg     # Exported SVG graphic with animation IDs
 ├── index.html           # Entry point
 └── package.json         # Dependencies & scripts
 ```
